@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EH216-S 飞行汽车课程作业 · 导航首页</title>
+<style>
+  :root{--navy:#16324f;--navy-2:#27567f;--accent:#2f80c9;--ink:#1f2730;--muted:#5b6773;--line:#e2e8ee;--bg:#f6f8fa;--card:#fff;}
+  *{box-sizing:border-box;}
+  body{margin:0;min-height:100vh;color:var(--ink);background:var(--bg);
+    font-family:"Noto Sans SC","Segoe UI","PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.8;}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px;}
+  header{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#fff;padding:60px 0 44px;}
+  .kicker{font-size:13px;letter-spacing:.18em;text-transform:uppercase;opacity:.8;margin-bottom:16px;}
+  h1{font-size:30px;margin:0 0 10px;}
+  h1 .en{display:block;font-size:17px;font-weight:400;opacity:.85;margin-top:8px;}
+  .meta{margin-top:18px;font-size:14px;opacity:.9;}
+  main{padding:44px 0 60px;}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;text-decoration:none;color:var(--ink);transition:transform .15s,box-shadow .15s;}
+  a.card:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(22,50,79,.14);}
+  .tag{display:inline-block;font-size:12.5px;font-weight:600;color:var(--accent);background:#eef4f9;border-radius:20px;padding:2px 12px;margin-bottom:14px;}
+  .card h2{font-size:21px;color:var(--navy);margin:0 0 8px;}
+  .card h2 .en{display:block;font-size:14px;font-weight:400;color:var(--muted);margin-top:4px;}
+  .card p{font-size:14.5px;color:#33414f;margin:10px 0;}
+  .chips{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;}
+  .chips span{font-size:12.5px;color:var(--muted);border:1px solid var(--line);border-radius:8px;padding:2px 10px;}
+  .note{margin-top:30px;background:#fff;border:1px dashed var(--line);border-radius:14px;padding:18px 22px;font-size:13.5px;color:var(--muted);}
+  footer{border-top:1px solid var(--line);padding:24px 0 36px;color:var(--muted);font-size:13px;text-align:center;}
+  @media (max-width:720px){.grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">飞行汽车技术基础 · 课程作业合集 · Fundamentals of Flying Vehicle Technology</div>
+    <h1>EH216-S 无人驾驶载人 eVTOL 课程作业
+      <span class="en">EH216-S Pilotless Passenger eVTOL · Course Assignments</span>
+    </h1>
+    <div class="meta">研究对象：亿航智能 EH216-S 载人电动垂直起降航空器 ｜ 证据截止：2026-11-25</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+    <a class="card" href="assignment-1/index.html">
+      <span class="tag">作业一 · Assignment 1</span>
+      <h2>全方位调研与分析
+        <span class="en">Research, Technical / Scenario / Market Feasibility</span>
+      </h2>
+      <p>围绕 EH216-S 的构型、关键技术、技术可行性、应用场景与市场可行性进行系统调研，含 PEST、SWOT、竞品对标与工程化路线。</p>
+      <div class="chips">
+        <span>案例综述</span><span>TRL 评估</span><span>场景矩阵</span><span>PEST</span><span>SWOT</span><span>竞品比较</span>
+      </div>
+    </a>
+    <a class="card" href="assignment-2/index.html">
+      <span class="tag">作业二 · Assignment 2</span>
+      <h2>全方位系统安全分析
+        <span class="en">Comprehensive System Safety Analysis</span>
+      </h2>
+      <p>承接作业一对象，按系统安全工程流程展开 PHA、FHA、FMEA、FTA、STPA 与人因分析，识别危险源、失效路径与防护措施。</p>
+      <div class="chips">
+        <span>PHA</span><span>FHA</span><span>FMEA</span><span>FTA</span><span>STPA</span><span>人因分析</span>
+      </div>
+    </a>
+  </div>
+
+  <div class="note">
+    提交说明：本目录可直接作为 GitHub Public 仓库根目录，入口文件为根目录 <code>index.html</code>；两份作业分别位于 <code>assignment-1/</code> 与 <code>assignment-2/</code> 子目录，配图统一存放于 <code>assets/</code>。若需分别提交两个仓库，将对应子目录内容作为仓库根目录即可。
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">飞行汽车技术基础 · 课程作业合集 · EH216-S · 2026-11-25</div>
+</footer>
+</body>
+</html>
